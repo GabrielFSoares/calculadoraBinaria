@@ -1,0 +1,11 @@
+#botao {
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 847px) {
+  #botao {
+      display: block;
+  }
+}

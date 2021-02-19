@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+
+      <div class="calculadora">
+        <input type="text" id="input" class="form-control resultado" value="{{resultado}}" placeholder="0" disabled/>
+
+        <div class="row">
+          <button type="button" (click)="clicar('0')" class="btn btn-secondary btn-lg font-weight-light">0</button>
+           <button type="button" (click)="clicar('1')" class="btn btn-secondary btn-lg font-weight-light">1</button>
+          <button type="button" (click)="calcular()" class="btn btn-danger btn-lg enter">=</button>
+        </div>
+
+        <div class="row" style="margin-top: -60px">
+          <button type="button" (click)="limpar()" class="btn btn-dark btn-lg font-weight-light">C</button>
+          <button type="button" (click)="clicar('+')" class="btn btn-dark btn-lg font-weight-light">+</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

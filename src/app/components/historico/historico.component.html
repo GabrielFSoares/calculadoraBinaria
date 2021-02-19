@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center">
+  <h1 class="display-4 m-4">Histórico</h1>
+</div>
+
+<div class="d-flex justify-content-center">
+  <ul class="nav flex-column">
+    <div class="bg-dark caixa">
+      <li class="btn-dark" *ngFor="let item of historico" >
+        {{item}}
+      </li>
+      <li class="d-flex justify-content-center">
+        <button class="btn btn-danger mt-4 w-100" (click)="limparHistorico()">Limpar</button>
+      </li>
+    </div>
+  </ul>
+</div>

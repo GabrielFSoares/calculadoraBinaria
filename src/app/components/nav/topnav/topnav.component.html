@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-dark py-3" (window:resize)="onResize($event)">
+    <a [routerLink]="['']" class="navbar-brand">Calculadora Binária</a>
+
+    <button class="btn" id="botao" (click)="openMenu()"><fa-icon class="btn-lg" [icon]="faBars"></fa-icon></button>
+
+    <div id="menu" [ngStyle]="{'display': display}">
+      <app-menu></app-menu>
+    </div>
+</nav>
